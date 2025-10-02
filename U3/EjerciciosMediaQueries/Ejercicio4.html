@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .clearfix{
+        background-color: rgb(70, 69, 69);
+    }
+    .link {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    @media (min-width: 600px) {
+        .clearfix{
+            overflow: hidden;
+        }
+        .link {
+            float: left;
+        }
+    }
+</style>
+<body>
+    <div class="clearfix">
+        <div class="container">
+        <div class="link">Link</div>
+        <div class="link">Link</div>
+        <div class="link">Link</div>
+    </div>
+    </div>
+</body>
+</html>

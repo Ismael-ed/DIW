@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .col1, .col2, .col3, .col4 {
+        padding: 20px;
+    }
+    .col1 {
+        background-color: rgb(122, 122, 122);
+    }
+    .col2 {
+        background-color: rgb(97, 97, 97);
+    }
+    .col3 {
+        background-color: rgb(63, 63, 63);
+    }
+    .col4 {
+        background-color: rgb(46, 46, 46);
+    }
+    @media (min-width: 600px) {
+        .col1,.col2,.col3,.col4 {
+        float: left;
+        width: 50%;
+      }
+    }
+    @media (min-width: 992px) {
+        .col1,.col2,.col3,.col4 {
+        float: left;
+        width: 25%;
+      }
+    }
+</style>
+<body>
+        <div class="clearfix">
+        <div class="col1"><h1>Column 1</h1> <p>Some text...</p></div>
+        <div class="col2"><h1>Column 2</h1> <p>Some text...</p></div>
+        <div class="col3"><h1>Column 3</h1> <p>Some text...</p></div>            
+        <div class="col4"><h1>Column 4</h1> <p>Some text...</p></div>
+      </div>     
+</body>
+</html>
