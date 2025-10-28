@@ -1,3 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+    --textoBlanco: #ffffff;
+    --textoVerde: #2c5530;
+    --textoNaranja: #f28c28;
+}
+.inicio{
+    float: right;
+    text-align: center;
+    color: var(--textoBlanco);
+}
+.texto-1{
+    font-size: 25px;
+    color: var(--textoBlanco);
+}
+.contacto{
+    text-align: right;
+    color: var(--textoBlanco);
+}
+header {
+    background-color: var(--textoVerde);
+
+}
+img {
+    height: 50px;
+    width: 50px;
+    
+}
 .row::after {
     content: "";
     clear: both;
@@ -136,4 +166,4 @@
     .col-lg-12 {
       width: 100%;
     }
-  }
+}
