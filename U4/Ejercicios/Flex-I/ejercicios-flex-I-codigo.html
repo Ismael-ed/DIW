@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios Flex (I). Código</title>
+  <style>
+    main {
+      height: 200px;
+      background-color: #c3c3c3;
+      display: flex;
+      
+      /*Ejercicio1*/
+      /*flex-direction: row-reverse;*/
+
+      /*Ejercicio2*/
+      /*flex-direction: column;*/
+
+      /*Ejercicio3*/
+      /*flex-direction: column-reverse;*/
+
+      /*Ejercicio4*/
+      /*justify-content: end;*/
+
+      /*Ejercicio5*/
+      /*justify-content: center;*/
+
+      /*Ejercicio6*/
+      /*justify-content: space-between;*/
+
+      /*Ejercicio7*/
+      /*justify-content: space-around;*/
+
+      /*Ejercicio8*/
+      /*align-items: end;*/
+
+      /*Ejercicio9*/
+      /*justify-content: center;
+      align-items: center;*/
+
+      /*Ejercicio10*/
+      /*justify-content: space-between;
+      align-items: end;*/
+      
+      /*Ejercicio11*/
+      /*justify-content: space-between;*/
+      
+      /*Ejercicio12*/
+      /*align-items: end;
+      justify-content: space-around;*/
+
+      /*Ejercicio13*/
+      /*align-items: center;
+      justify-content: center;*/
+
+      /*Ejercicio14*/
+      /*align-items: end;
+      justify-content: space-between;
+      flex-direction:row-reverse*/
+
+      /*Ejercicio15*/
+      /*align-items: end;
+      flex-direction: row-reverse;*/
+      /*Ejercicio16*/
+
+    }
+
+    main div {
+      width: 100px;
+      height: 100px;  
+    }
+
+    main .rojo {
+      background-color: red;
+      /*Ejercicio13*/
+      /*align-self: start;*/
+
+      /*Ejercicio15*/
+      /*align-self: center;
+      flex-grow: 1;*/
+
+      /*Ejercicio16*/
+      flex-grow: 1;
+    }
+
+    main .verde {
+      background-color: green;
+      /*Ejercicio11*/
+      /*align-self: end;*/
+
+       /*Ejercicio12*/
+       /*align-self: center;*/
+
+       /*Ejercicio14*/
+       /*align-self: start;*/
+
+       /*Ejercicio15*/
+      /*flex-grow: 2;*/
+      
+      /*Ejercicio16*/
+      align-self: center;
+      flex-grow: 2;
+    }
+
+    main .azul {
+      background-color: blue;
+      /*Ejercicio13*/
+      /*align-self: end;*/
+
+      /*Ejercicio15*/
+      /*flex-grow: 2;*/
+
+      /*Ejercicio16*/
+      align-self: end;
+      flex-grow: 1;
+    
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="rojo"></div>
+    <div class="verde"></div>
+    <div class="azul"></div>
+  </main>
+</body>
+
+</html>
