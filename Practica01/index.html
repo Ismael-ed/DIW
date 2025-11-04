@@ -1,19 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/columnas.css">
-</head>
-<body>
-    <header class="row">
-        <div class="col-">
-        <img src="img/logo.svg" alt="" srcset="">
-        <h1 class="texto-1">Bookify</h1>
-        </div>
-        <div class="contacto">Contacto</div>
-        <div class="inicio">Inicio</div> 
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookify | Inicio</title>
+    <link rel="stylesheet" href="css/columnas.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-content">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="Logo Bookify" width="50" height="50" />
+          <span>Bookify</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html" class="active">Inicio</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
     </header>
-</body>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+      <section class="intro">
+        <h1>Bienvenidos a Bookify</h1>
+        <p class="subtitulo">
+          Tu biblioteca digital del futuro. Descubre miles de libros, revistas y
+          recursos académicos al alcance de un clic.
+        </p>
+      </section>
+
+      <section class="row">
+        <div class="col-8">
+          <h2>Libros Destacados del Mes</h2>
+          <article class="card destacado">
+            <img
+              src="https://picsum.photos/seed/book1/800/450"
+              alt="Libro destacado"
+            />
+            <h3>El Arte de la Programación</h3>
+            <p class="autor"><em>Por Donald E. Knuth</em></p>
+            <p>
+              Una obra maestra que explora los fundamentos matemáticos y
+              algorítmicos de la programación moderna.
+            </p>
+          </article>
+        </div>
+
+        <aside class="col-4">
+          <h2>Novedades</h2>
+          <div class="row">
+              <div class="col-lg-6 card mini">
+                <img src="https://picsum.photos/seed/ai/800/450" alt="IA" />
+                <h4>Inteligencia Artificial</h4>
+                <p>Stuart Russell</p>
+              </div>
+              <div class=" col-lg-6 card mini">
+                <img
+                  src="https://picsum.photos/seed/forest/800/450"
+                  alt="Clean Code"
+                />
+                <h4>Clean Code</h4>
+                <p>Robert C. Martin</p>
+          </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>Bookify | © 2025</p>
+        <p>Autor: Juan Pérez</p>
+      </div>
+    </footer>
+
+    <!-- BOTÓN SCROLL -->
+    <a href="#" class="scroll-top">↑</a>
+  </body>
 </html>

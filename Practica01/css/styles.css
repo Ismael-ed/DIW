@@ -1,0 +1,192 @@
+*{
+  box-sizing: border-box;
+}
+:root {
+  --color-bg-body: #faf9f6;
+  --color-header-footer: #2c5530;
+  --color-hover: #ff6b35;
+  --color-btn-hover: #1a3d1e;
+  --color-scroll: #ff6b35;
+  --color-scroll-hover: #e55a2b;
+  --color-shadow: rgba(0,0,0,0.1);
+  --color-accent: #8b4513;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: var(--color-bg-body);
+  scroll-behavior: smooth;
+  color: #222;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* HEADER */
+.header {
+  background-color: var(--color-header-footer);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--color-hover);
+}
+
+/* ESPACIADO GLOBAL */
+main {
+  padding-top: 100px;
+}
+
+/* INTRO */
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro h1 {
+  color: var(--color-header-footer);
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  color: var(--color-accent);
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+/* SECCIONES */
+h2 {
+  color: var(--color-header-footer);
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--color-header-footer);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* CARDS */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px var(--color-shadow);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.7rem;
+}
+
+/* TARJETA DESTACADA */
+.destacado h3 {
+  color: var(--color-header-footer);
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.autor {
+  color: var(--color-accent);
+  margin: 0.3rem 0 0.7rem;
+}
+
+/* NOVEDADES */
+aside h2 {
+  font-size: 1.2rem;
+  color: var(--color-header-footer);
+  border-bottom: 1px solid var(--color-header-footer);
+  margin-bottom: 0.8rem;
+}
+
+.card.mini {
+  padding: 0.5rem;
+}
+
+.card.mini img {
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card.mini h4 {
+  color: var(--color-header-footer);
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--color-header-footer);
+  color: white;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+/* SCROLL TO TOP */
+.scroll-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background: var(--color-scroll);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 10px 14px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+  display: none;
+}
+
+.scroll-top:hover {
+  width: 100%;
+  position: fixed; 
+}
+

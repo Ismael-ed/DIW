@@ -1,12 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/columnas.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookify | Contacto</title>
+  <link rel="stylesheet" href="css/columnas.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+ <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Logo Bookify" width="50" height="50">
+        <span>Bookify</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contacto-info card verde">
+      <h2>Información de Contacto</h2>
+      <p>📍 Dirección: Calle de la Lectura, 45, Madrid</p>
+      <p>📞 Teléfono: +34 600 123 456</p>
+      <p>📧 Email: contacto@bookify.es</p>
+      <p>🕒 Horario: Lunes a Viernes, 9:00 - 18:00</p>
+      <p>🌐 Redes: @bookify_es</p>
+    </section>
+
+    <section class="formulario card">
+      <h2>Formulario de Contacto</h2>
+      <form>
+        <label>Nombre*</label>
+        <input type="text" required>
+
+        <label>Email*</label>
+        <input type="email" required>
+
+        <label>Teléfono*</label>
+        <input type="tel" required>
+
+        <label>Asunto*</label>
+        <input type="text" required>
+
+        <label>Mensaje*</label>
+        <textarea required></textarea>
+
+        <label>Tipo de consulta:</label>
+        <select>
+          <option>Soporte técnico</option>
+          <option>Sugerencias</option>
+          <option>Colaboración</option>
+          <option>Otro</option>
+        </select>
+
+        <label><input type="checkbox"> Suscribirse a la newsletter</label>
+
+        <div class="botones">
+          <button type="reset" class="btn-secundario">Limpiar</button>
+          <button type="submit" class="btn-principal">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <details>
+        <summary>¿Cómo me registro?</summary>
+        <p>Puedes hacerlo desde el menú principal.</p>
+      </details>
+      <details>
+        <summary>¿Cuál es el límite de descargas?</summary>
+        <p>No hay límite, disfruta de todos los libros disponibles.</p>
+      </details>
+      <details>
+        <summary>¿Qué dispositivos son compatibles?</summary>
+        <p>Todos los dispositivos modernos con navegador web.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Bookify | © 2025</p>
+      <p>Autor: Juan Pérez</p>
+    </div>
+  </footer>
+
+  <a href="#" class="scroll-top">↑</a>
 </body>
 </html>
