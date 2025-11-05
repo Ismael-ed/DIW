@@ -10,64 +10,85 @@
   --color-scroll-hover: #e55a2b;
   --color-shadow: rgba(0,0,0,0.1);
   --color-accent: #8b4513;
+  --blanco:white;
+}
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
 }
 
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   background-color: var(--color-bg-body);
-  color: #222;
 }
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 ;
   padding: 1rem;
 }
 
-.header {
+header{
   background-color: var(--color-header-footer);
-  color: white;
   position: sticky;
-  padding:5px;
   top: 0;
+  padding: 15px;
   width: 100%;
   z-index: 4;
   overflow: hidden; 
 }
-.headerIzq{
-  float: left;
-  vertical-align: middle;
-  padding: 10px;
-}
 
-.textoH {
-  color: white;
+.logo span{
+  color: var(--blanco);
   font-weight: bold;
   font-size: 1.3rem;
-  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.logo img{
   vertical-align: middle;
 }
 
-.logo {
-  vertical-align: middle;
+.logo{
+  text-decoration: none;
+  color: var(--blanco);
 }
-.headerDer{
-  float: right; 
-  vertical-align: middle;
-}
-.headerDer a {
+
+.botones a {
   text-decoration: none;
   transition: color 0.3s ease;
+  color: var(--blanco);
+  margin-left: 20px;
+  margin-right: 20px;
   vertical-align: middle;
-  
+  line-height: 50px; /*tamaño de la imagen*/
 }
 
-.headerDer a:hover,
-.headerDer a.active {
+.botones a:hover,
+.botones a.active {
   color: var(--color-hover);
 }
 
+footer {
+  background-color: var(--color-header-footer);
+  color: var(--blanco);
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  z-index: 4;
+  overflow: hidden; 
+}
+.footer div{
+  float: left;
+  color: var(--blanco);
+  vertical-align: middle;
+  margin-left: 10px;
+}
 /* INTRO */
 .intro {
   text-align: center;
@@ -86,14 +107,7 @@ body {
   font-style: italic;
 }
 
-/* SECCIONES */
-h2 {
-  color: var(--color-header-footer);
-  font-size: 1.4rem;
-  border-bottom: 2px solid var(--color-header-footer);
-  padding-bottom: 0.3rem;
-  margin-bottom: 1rem;
-}
+
 
 /* CARDS */
 .card {
@@ -138,54 +152,12 @@ aside h2 {
   margin-bottom: 0.8rem;
 }
 
-.card.mini {
-  padding: 0.5rem;
-}
 
-.card.mini img {
-  height: 120px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.card.mini h4 {
-  color: var(--color-header-footer);
-  margin: 0.5rem 0 0.2rem;
-  font-size: 1rem;
-}
 
 /* FOOTER */
-.footer {
-  background-color: var(--color-header-footer);
-  color: white;
-  bottom: 0;
-}
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.9rem;
-}
 
-/* SCROLL TO TOP */
-.scroll-top {
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  background: var(--color-scroll);
-  color: white;
-  border-radius: 50%;
-  font-size: 1.4rem;
-  text-decoration: none;
-  padding: 10px 14px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-  transition: background 0.3s;
-  display: none;
-}
 
-.scroll-top:hover {
-  width: 100%;
-  position: fixed; 
-}
+
+
 
