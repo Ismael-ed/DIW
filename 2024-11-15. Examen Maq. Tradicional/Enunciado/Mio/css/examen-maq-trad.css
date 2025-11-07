@@ -1,6 +1,6 @@
 :root {
   --header-bg: black;
-  --header-color: white;
+  --header-color: hsl(0, 0%, 100%);
 }
 
 * {

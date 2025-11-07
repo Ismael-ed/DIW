@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+:root{
+    --header-texto:hsl(0, 0%, 100%);
+    --header-bg:#2c3e50;
+    --hover-color:rgba(0, 0, 0, 0.562);
+    --img-bg:#007bff;
+}
+@font-face {
+    font-family: 'EagleLake';
+    src: url('font/EagleLake-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.f-left {
+    float: left;
+}
+  
+.f-right {
+    float: right;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color:var(--header-bg);
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    position: sticky;
+    z-index: 999;
+}
+header a.logo{
+    text-decoration: none;
+    font-weight:bold;
+}
+header a.logo img{
+    height: 45px;
+    color: var(--header-bg);
+    background-color: var(--header-texto);
+    vertical-align: middle;
+    border-radius: 10px;
+}
+header a.logo span{
+    color: var(--header-texto);
+    vertical-align: middle;
+    margin-left: 10px;
+}
+header a.navegacion {
+    color: var(--header-texto);
+    text-decoration: none;
+    padding: 15px 10px;
+    vertical-align: middle;
+}
+  
+header a.navegacion:hover {
+    background-color: var(--hover-color);
+}
+
+main .titulo{
+    background-color: var(--header-bg);
+    text-align: center;
+    color:var(--header-texto);  
+    padding-bottom: 30px;
+}
+main .textoEstilado{
+    font-weight: bold;
+    font-family: 'EagleLake', cursive;
+    font-size: 40px;
+    margin-top: 10px;
+    padding: 30px;
+}
+main .img-container img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+main .img-container .img-title {
+    position: relative;
+    top: -40px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: var(--img-bg);
+    color: var(--header-texto);
+    padding: 3px 6px;
+    font-size: 16pt;
+    font-weight: bold;
+    width: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
