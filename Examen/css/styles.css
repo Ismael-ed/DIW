@@ -8,10 +8,9 @@
     --img-bg:#007bff;
 }
 @font-face {
-    font-family: 'EagleLake';
-    src: url('font/EagleLake-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Eagle";
+    src: url("font/EagleLake-Regular.ttf") 
+    format('truetype');
 }
 .f-left {
     float: left;
@@ -67,7 +66,7 @@ main .titulo{
 }
 main .textoEstilado{
     font-weight: bold;
-    font-family: 'EagleLake', cursive;
+    font-family: 'Eagle', sans-serif;
     font-size: 40px;
     margin-top: 10px;
     padding: 30px;
@@ -76,7 +75,7 @@ main .img-container img {
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 main .img-container .img-title {
