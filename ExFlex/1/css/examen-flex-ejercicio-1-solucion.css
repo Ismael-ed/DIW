@@ -124,7 +124,7 @@
 /*********************************/
 .ej8 {
     gap: 10px;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .ej8 :nth-child(1) {flex-grow: 1;}
