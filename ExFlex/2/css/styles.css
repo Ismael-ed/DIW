@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-general{
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 15px;
+    width: 100%;
+}
+body{
+    margin: 0;
+}
+.zonas{
+    border: 1px solid black;
+}
+z-izq{
+    order: 2;
+}
+z-der{
+    order:1;
+}

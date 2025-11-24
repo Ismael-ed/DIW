@@ -8,7 +8,7 @@
         .div1 {
             padding: 50px;
             background-color: #ffc0cb;
-            order: 2;
+            align-self: flex-start;
         }
         .div2 {
             background-color: #00ffff;
@@ -17,8 +17,9 @@
         .texto {
             background-color: #ff7f58; 
         }
-        .container{
+        .container-F{
             display: flex;
+            flex-direction: row-reverse;
         }
         
         .container-L{
@@ -29,13 +30,16 @@
     </style>
 </head>
 <body>
-        <div>
-            <div class="container">
+        <div class="container">
+            <div class="container-F">
+
                 <div class="div1">Div1</div>
+
                 <div class="container-L">
                     <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum possimus eius cum a hic excepturi molestias. Neque saepe fugit, placeat dolor autem porro voluptatibus numquam iste reprehenderit molestias ea.</div>
                     <div class="div2">Div2</div>
                 </div>
+
             </div>
             
          
