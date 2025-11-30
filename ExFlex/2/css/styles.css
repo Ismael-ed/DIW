@@ -14,9 +14,12 @@ body{
 .zonas{
     border: 1px solid black;
 }
-z-izq{
-    order: 2;
-}
 z-der{
     order:1;
+}
+z-izq{
+    order: 3;
+}
+z-cent{
+    order:2;
 }
