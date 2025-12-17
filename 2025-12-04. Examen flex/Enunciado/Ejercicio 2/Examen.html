@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/columnas.css" />
+  </head>
+  <body>
+    <main class="container-general">
+      <h3>El contenedor general será de 800px para anchuras de mayores de 900px
+         y ocupará toda la anchura disponible para anchura menores
+      </h3>
+      <hr>
+      <h3>
+        Fila 1.La zona izquierda ocupa 10 columnas para escritorio y 9 para tablets.La zona
+        derecha ocupa el resto del espacio disponible.Ambas ocupan el 100% para móviles.
+        Además,para móviles, la zona derecha debe aparecer antes que la izquierda.
+      </h3>
+      <div class="row">
+        <div class="zonas col-sm-9 col-md-10 z-izq ">
+          Zona izquierda <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorum ab quaerat, nihil nemo, similique aliquam iure quidem incidunt corrupti cumque magni iusto natus id sapiente, ipsum mollitia hic ducimus!
+        </div>
+        <div class="zonas col z-der">
+          Zona derecha
+        </div>
+      </div>
+      <h3>
+        Fila 2.La zona central ocupa siempre el 50% del espacio disponible. Las otras dos zonas
+        se reparten el espacio disponible, pero si se elimina una de ellas, la que queda se apropia
+        del espacio que ha dejado la columna eliminada. Todas ocupan el 100%  para móviles.
+      </h3>
+      <div class="row">
+        <div class="zonas col z-izq ">
+          Zona izquierda
+        </div>
+        <div class="zonas col-sm-6 z-cent">
+          Zona central
+        </div>
+        <div class="zonas col z-der">
+          Zona derecha
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
